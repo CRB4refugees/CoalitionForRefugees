@@ -1,12 +1,25 @@
 //jQuery allowing for a sticky navigation
 
-console.log('attached');
-
 $(window).scroll(function() {
-if ($(this).scrollTop() > 1){
-    $('header').addClass("sticky");
+
+if (window.innerHeight  > 768){ //requires that the window is larger than iPad to work
+
+  const focalImg = $('.focalImg');
+  const imgHeight = focalImg.height();
+
+
+if ($(this).scrollTop() > imgHeight){
+    console.log(`This is the window height: ${window.innerHeight} and this is the scroll height: ${$(this).scrollTop()}`)
+    $('nav').addClass("sticky");
+    console.log('stickified')
   }
   else{
-    $('header').removeClass("sticky");
+    console.log(`This is the window height: ${window.innerHeight} and this is the scroll height: ${$(this).scrollTop()}`)
+
+    $('nav').removeClass("sticky");
+
+    console.log('sticky removed')
   }
-});
+
+}//end if (window.innerHeight)
+});//end window .scroll

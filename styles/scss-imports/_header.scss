@@ -1,6 +1,8 @@
 header {
   margin: 0;
   padding: 0;
+  transition: all 0.5s ease;
+
 }
 
 nav {
@@ -37,4 +39,13 @@ nav {
 img.nav-logo {
   margin: 15px;
   height: 75px;
+}
+
+nav.sticky {
+  background-color: $redBrown;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
 }
