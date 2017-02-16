@@ -1,30 +1,21 @@
 
 <!DOCTYPE html>
 <html lang="en">
+{% include head.html %}
+<body>
 
-  {% include head.html %}
-
-
-  <body>
-  {% include header.html%}
   <div class="focalImg">
     <div class="focal-overlay">
-      <h1 class="focalHeadline">We help refugees.</h1>
-      <p class="focal-subheadline">The Coalition of Refugees from Burma reaches across ethnic, religious, and language barriers to provide help to those that need it most. We offer a wide range of Educational Programs to help refugees get on their feet and learn the skills they need to become successful in an ever-changing world.</p>
+      <div class="focal-text-container">
+      <h1 class="focalHeadline">We help refugees</h1>
+      <p class="focal-subheadline">We are the Coalition for Refugees from Burma, and we offer a wide range of Educational Programs to help refugees get on their feet and learn the skills they need to become successful in an ever-changing world.</p>
+    </div>
     </div>
   </div>
+  {% include header.html%}
 
-
-
-      <hr>
-
-      <h1>hello</h1>
-      <p>This is some type of subheadline.</p>
 
       <!-- {{ content }} -->
-
-      <hr>
-
       <footer>
           &copy; {{ site.time | date: '%Y' }}. All rights reserved.
       </footer>
