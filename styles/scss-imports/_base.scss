@@ -1,4 +1,29 @@
 // RESETTING LINKS
-a {
-  text-decoration: none;
-}
+
+
+/* BEGIN MEDIA QUERIES FOR MOBILE SIZED SCREENS */
+
+@media only screen
+  and (min-device-width: 320px) {
+
+    a {
+      text-decoration: none;
+    }
+
+
+
+
+
+
+  }
+
+
+/* BEGIN MEDIA QUERIES FOR TABLET SIZED SCREENS */
+
+@media only screen
+  and (min-device-width: 768px) {}
+
+/* BEGIN MEDIA QUERIES FOR MEDIUM LAPTOPS AND LARGER SCREENS */
+
+@media only screen
+    and (min-device-width: 1024px) {}

@@ -1,79 +1,98 @@
+/* BEGIN MEDIA QUERIES FOR MOBILE SIZED SCREENS */
+
+@media only screen
+  and (min-device-width: 320px) {
+
+
+
+    .focalImg {
+      display: flex;
+      width: 100%;
+      height: 500px;
+
+      background:
+        url(https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-443690.jpg);
+      margin: 0;
+      flex-direction: column;
+      background-size: cover;
+      background-position: center;
+      align-items: center;
+      justify-content: center;
+      text-rendering: optimizeLegibility;
+    }
+
+
+
+    .focal-overlay {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      background-color: $greyBlue70;
+      border-bottom: 10px solid $redBrown;
+
+    }
+
+    .focal-text-container {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      margin: 0 auto;
+      align-items: center;
+      justify-content: center;
+      text-rendering: optimizeLegibility;
+    }
+
+    .focalHeadline {
+      text-align: center;
+      font-size: 3em;
+      color: $white;
+      text-shadow:0 0 4px rgba(0, 0, 0, 0.75), 0 0 14px rgba(0, 0, 0, 0.5);
+    }
+
+    .focal-subheadline {
+      margin: 0;
+      font-size: 1em;
+      color: $white;
+      text-shadow:0 0 4px rgba(0, 0, 0, 0.75), 0 0 14px rgba(0, 0, 0, 0.5);
+
+    }
+
+    .button-container-home {
+      display: flex;
+      flex-direction: row;
+      // justify-content: space-between;
+      // align-items: center;
+    }
+
+    #donate-btn-home {
+      border: 2px solid $orangeHighlight;
+      background: $orangeHighlight70;
+    }
+
+    #donate-btn-home:hover {
+      background: $orangeHighlight;
+    }
+
+
+
+  } //end small screen media and global queries
+
+
+/* BEGIN MEDIA QUERIES FOR TABLET SIZED SCREENS */
+
+@media only screen
+  and (min-device-width: 768px) {}
+
+/* BEGIN MEDIA QUERIES FOR MEDIUM LAPTOPS AND LARGER SCREENS */
+
+@media only screen
+    and (min-device-width: 1024px) {}
 
 
 
 
 
-// @media only screen
-//   and (min-device-width: 768px) {
-
-.focalImg {
-  display: flex;
-  width: 100%;
-  height: 500px;
-
-  background:
-    url(https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-443690.jpg);
-  margin: 0;
-  flex-direction: column;
-  background-size: cover;
-  background-position: center;
-  align-items: center;
-  justify-content: center;
-  text-rendering: optimizeLegibility;
-}
-
-
-
-.focal-overlay {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  background-color: $greyBlue70;
-  border-bottom: 10px solid $redBrown;
-
-}
-
-.focal-text-container {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  margin: 0 auto;
-  align-items: center;
-  justify-content: center;
-  text-rendering: optimizeLegibility;
-}
-
-.focalHeadline {
-  text-align: center;
-  font-size: 3em;
-  color: $white;
-  text-shadow:0 0 4px rgba(0, 0, 0, 0.75), 0 0 14px rgba(0, 0, 0, 0.5);
-}
-
-.focal-subheadline {
-  margin: 0;
-  font-size: 1em;
-  color: $white;
-  text-shadow:0 0 4px rgba(0, 0, 0, 0.75), 0 0 14px rgba(0, 0, 0, 0.5);
-
-}
-
-.button-container-home {
-  display: flex;
-  flex-direction: row;
-  // justify-content: space-between;
-  // align-items: center;
-}
-
-#donate-btn-home {
-  border: 2px solid $orangeHighlight;
-  background: $orangeHighlight70;
-}
-
-#donate-btn-home:hover {
-  background: $orangeHighlight;
-}
 
 // }
