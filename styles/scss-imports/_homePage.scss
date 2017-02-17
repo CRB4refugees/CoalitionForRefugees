@@ -1,3 +1,11 @@
+
+
+
+
+
+// @media only screen
+//   and (min-device-width: 768px) {
+
 .focalImg {
   display: flex;
   width: 100%;
@@ -23,6 +31,7 @@
   background-size: cover;
   background-position: center;
   background-color: $greyBlue70;
+  border-bottom: 10px solid $redBrown;
 
 }
 
@@ -51,8 +60,20 @@
 
 }
 
-
-img.long-ass-element {
-  height: 250vh;
-  max-width: 10px;
+.button-container-home {
+  display: flex;
+  flex-direction: row;
+  // justify-content: space-between;
+  // align-items: center;
 }
+
+#donate-btn-home {
+  border: 2px solid $orangeHighlight;
+  background: $orangeHighlight70;
+}
+
+#donate-btn-home:hover {
+  background: $orangeHighlight;
+}
+
+// }
