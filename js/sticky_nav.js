@@ -2,7 +2,7 @@
 
 $(window).scroll(function() {
 
-if (window.innerWidth  > 500){ //requires that the window is larger than iPad to work
+if (window.innerWidth  > 300){ //requires that the window is larger than iPad to work
 
   const focalImg = $('.focalImg');
   // console.log(focalImg);

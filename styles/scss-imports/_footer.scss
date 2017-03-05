@@ -3,15 +3,112 @@
 /* BEGIN MEDIA QUERIES FOR MOBILE SIZED SCREENS */
 
 @media only screen
-  and (min-device-width: 320px) {}
+  and (min-device-width: 320px) {
+
+    #seattle-skyline,
+    #forest-skyline,
+    .footer-cont,
+    .footer-touchup,
+    footer-flex-cont {
+      margin: 0;
+      padding: 0;
+    }
+
+    footer {
+      overflow: visible;
+    }
+
+    .footer-cont {
+      position: relative;
+      overflow:visible;
+      background: $redBrown;
+      z-index: -3;
+    }
+
+    #seattle-skyline {
+      display: block;
+      position: absolute;
+      top: -50px;
+      left: 0;
+      width: 100%;
+      min-height: 150px;
+      background: no-repeat center/100% url("/assets/images/seattle-skyline.png");
+      z-index: -2;
+    }
+
+    #forest-skyline {
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 100%;
+      background: no-repeat center/100% url("/assets/images/forest-red.png");
+      min-height: 50px;
+      z-index: -1;
+    }
+
+    #footer-touchup {
+      position: absolute;
+      height: 50px;
+      background: $redBrown;
+      top: 99px;
+      left: 0px;
+      width: 100%;
+      z-index: -1;
+    }
+
+    .footer-flex-cont {
+      background: $redBrown;
+      position: absolute;
+      color: $white;
+      display: flex;
+      top: 149px;
+      left: 0px;
+      width: 100%;
+      height: 150px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  }
 
 
 /* BEGIN MEDIA QUERIES FOR TABLET SIZED SCREENS */
 
 @media only screen
-  and (min-device-width: 768px) {}
+  and (min-device-width: 768px) {
+    #seattle-skyline {
+
+    }
+    #forest-skyline {
+      top: 70px;
+    }
+  }
 
 /* BEGIN MEDIA QUERIES FOR MEDIUM LAPTOPS AND LARGER SCREENS */
 
 @media only screen
-    and (min-device-width: 1024px) {}
+    and (min-device-width: 1024px) {
+      #seattle-skyline {
+
+      }
+      #forest-skyline {
+
+      }
+    }

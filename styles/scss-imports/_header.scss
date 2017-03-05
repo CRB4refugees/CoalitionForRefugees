@@ -49,18 +49,30 @@ nav.sticky {
   top: 0;
   left: 0;
   right: 0;
+  -webkit-backface-visibility: hidden;
+
 }
 
 // APPARENTLY I FORGOT WHAT MOBILE FIRST WAS WHILE DESIGNING THIS MENU SO HERE ARE THE MEDIA QUERIES LAST
 
 @media only screen
   and (min-device-width: 320px) {
+
+    // nav.sticky {
+    //   background-color: $redBrown;
+    //   position: fixed;
+    //   top: 0;
+    //   left: 0;
+    //   right: 0;
+    //   // -webkit-backface-visibility: hidden;
+    // }
+
     .nav-links {
       display: none;
     }
 
 //hamburger link style
-    .nav-menu-link img {
+    #nav-menu-link img {
       height: 50px;
     }
 
@@ -81,7 +93,7 @@ nav.sticky {
       font-size: 0.8em;
     }
 
-    .nav-menu-link img {
+    #nav-menu-link img {
       display: none;
     }
 
