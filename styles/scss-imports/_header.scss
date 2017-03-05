@@ -1,20 +1,5 @@
 /* BEGIN MEDIA QUERIES FOR MOBILE SIZED SCREENS */
 
-@media only screen
-  and (min-device-width: 320px) {}
-
-
-/* BEGIN MEDIA QUERIES FOR TABLET SIZED SCREENS */
-
-@media only screen
-  and (min-device-width: 768px) {}
-
-/* BEGIN MEDIA QUERIES FOR MEDIUM LAPTOPS AND LARGER SCREENS */
-
-@media only screen
-    and (min-device-width: 1024px) {}
-
-
 header {
   margin: 0;
   padding: 0;
@@ -65,3 +50,49 @@ nav.sticky {
   left: 0;
   right: 0;
 }
+
+// APPARENTLY I FORGOT WHAT MOBILE FIRST WAS WHILE DESIGNING THIS MENU SO HERE ARE THE MEDIA QUERIES LAST
+
+@media only screen
+  and (min-device-width: 320px) {
+    .nav-links {
+      display: none;
+    }
+
+//hamburger link style
+    .nav-menu-link img {
+      height: 50px;
+    }
+
+    .focalHeadline {
+      margin-top: 0px;
+    }
+
+
+  }
+
+
+/* BEGIN MEDIA QUERIES FOR TABLET SIZED SCREENS */
+
+@media only screen
+  and (min-device-width: 768px) {
+    .nav-links {
+      display: block;
+      font-size: 0.8em;
+    }
+
+    .nav-menu-link img {
+      display: none;
+    }
+
+  }
+
+/* BEGIN MEDIA QUERIES FOR MEDIUM LAPTOPS AND LARGER SCREENS */
+
+@media only screen
+    and (min-device-width: 1024px) {
+
+      .nav-link-container a {
+        font-size: 1.1em;
+      }
+    }
