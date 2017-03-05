@@ -67,25 +67,6 @@
       height: 150px;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   }
 
 
@@ -94,10 +75,19 @@
 @media only screen
   and (min-device-width: 768px) {
     #seattle-skyline {
+      min-height: 250px;
 
     }
     #forest-skyline {
-      top: 70px;
+      top: 125px;
+    }
+
+    #footer-touchup {
+      top: 170px;
+    }
+
+    .footer-flex-cont {
+      top: 200px;
     }
   }
 
@@ -106,9 +96,34 @@
 @media only screen
     and (min-device-width: 1024px) {
       #seattle-skyline {
+        min-height: 425px;
 
       }
       #forest-skyline {
-
+        min-height: 250px;
+        top: 175px;
       }
+
+      #footer-touchup {
+        top: 350px;
+        height: 175px
+      }
+
+      .footer-flex-cont {
+        top: 400px;
+      }
+    }
+
+
+    @media only screen
+        and (min-device-width: 1400px) {
+
+      #seattle-skyline {
+        display: none;
+      }
+
+      .footer-flex-cont {
+        height: 500px;
+      }
+
     }
