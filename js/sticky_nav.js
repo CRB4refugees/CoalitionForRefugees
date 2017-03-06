@@ -1,3 +1,5 @@
+'use strict';
+
 //jQuery allowing for a sticky navigation
 
 $(window).scroll(function() {
