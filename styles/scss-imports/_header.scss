@@ -30,7 +30,8 @@ nav {
 
 .nav-title {
   color: $white;
-  font-size: 1.1em;
+  font-size: 1.3em;
+  font-family: 'Poppins',Futura,"Trebuchet MS",Arial,sans-serif;
 }
 
 .nav-link-container a {
@@ -49,7 +50,7 @@ nav.sticky {
   top: 0;
   left: 0;
   right: 0;
-  -webkit-backface-visibility: hidden;
+  // -webkit-backface-visibility: hidden;
 
 }
 
