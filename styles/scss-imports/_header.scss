@@ -14,6 +14,11 @@ nav {
   background-color: $redBrown;
 }
 
+nav#responsive-sticky-nav {
+  background-color: $redBrown;
+  opacity: 1 !important;
+}
+
 .nav-link-container {
   display: flex;
   justify-content: space-around;
@@ -44,12 +49,15 @@ img.nav-logo {
   height: 75px;
 }
 
-nav.sticky {
-  background-color: $redBrown;
+nav.topNotch {
+  background-color: $redBrown !important;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  opacity: 1 !important;
+
+
   // -webkit-backface-visibility: hidden;
 
 }
@@ -59,7 +67,7 @@ nav.sticky {
 @media only screen
   and (min-device-width: 320px) {
 
-    // nav.sticky {
+    // nav.topNotch {
     //   background-color: $redBrown;
     //   position: fixed;
     //   top: 0;
