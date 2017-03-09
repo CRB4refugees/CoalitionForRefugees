@@ -20,7 +20,7 @@ description: > # this means to ignore newlines until "baseurl:"
 tagline: We help refugees.
 jQuery: <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 sticky-nav: <script src="/js/sticky_nav.js"></script>
-bootstrapJS: <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></script>
+# bootstrapJS: <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></script>
 
 
 baseurl: "" # the subpath of your site, e.g. /blog

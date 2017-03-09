@@ -3,6 +3,10 @@
 @media only screen
   and (min-device-width: 320px) {
 
+    .solo-img {
+      width: 100%;
+    }
+
     .focalImg {
       display: flex;
       width: 100%;
@@ -68,6 +72,42 @@
       background: $orangeHighlight;
     }
 
+    .flex-page-section {
+      margin: 50px 0;
+    }
+
+//deals with sections of content mid page
+    .flex-page-section {
+      display: flex;
+      flex-direction: column;
+    }
+
+//reordering so that image containers occur first
+
+    .img-cont {
+      order: -1;
+    }
+
+//aligning collage img section elements
+    .collage9 {
+      display: flex;
+      flex-wrap: wrap;
+      flex-grow: 1;
+    }
+
+//making a 9 image collage 3x3 images of 1:1 ratio;
+    .collage9 img{
+      width: 33%;
+      height: 33%;
+    }
+
+    .button-container-home-page {
+      margin: 0 auto;
+      width: 60%;
+    }
+
+
+
 
 
   } //end small screen media and global queries
@@ -94,6 +134,35 @@
     .focal-overlay {
       border-bottom: 1px solid $redBrown;
     }
+
+//section margin
+
+    .flex-page-section {
+      margin: 75px 0;
+    }
+
+//realigning containers to be side by side
+    .flex-page-section {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+    .text-cont {
+      order: 0;
+      width: 48%;
+      margin: 1%;
+    }
+    .img-cont {
+      order: 0;
+      width: 48%;
+      margin: 1%;
+    }
+
+    .reverse {
+      order: -1;
+    }
+
+
 }
 
 /* BEGIN MEDIA QUERIES FOR MEDIUM LAPTOPS AND LARGER SCREENS */

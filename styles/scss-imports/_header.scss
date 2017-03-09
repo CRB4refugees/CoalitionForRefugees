@@ -12,11 +12,15 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: $redBrown;
+  transition: all 0.5s ease-in;
+
 }
 
 nav#responsive-sticky-nav {
   background-color: $redBrown;
   opacity: 1 !important;
+  transition: all 0.5s ease;
+
 }
 
 .nav-link-container {
@@ -56,11 +60,11 @@ nav.topNotch {
   left: 0;
   right: 0;
   opacity: 1 !important;
-
-
   // -webkit-backface-visibility: hidden;
 
 }
+
+
 
 // APPARENTLY I FORGOT WHAT MOBILE FIRST WAS WHILE DESIGNING THIS MENU SO HERE ARE THE MEDIA QUERIES LAST
 
