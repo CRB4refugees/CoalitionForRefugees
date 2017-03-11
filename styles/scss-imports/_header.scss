@@ -12,6 +12,15 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: $redBrown;
+  transition: all 0.5s ease-in;
+
+}
+
+nav#responsive-sticky-nav {
+  background-color: $redBrown;
+  opacity: 1 !important;
+  transition: all 0.5s ease;
+
 }
 
 .nav-link-container {
@@ -30,7 +39,8 @@ nav {
 
 .nav-title {
   color: $white;
-  font-size: 1.1em;
+  font-size: 1.3em;
+  font-family: 'Poppins',Futura,"Trebuchet MS",Arial,sans-serif;
 }
 
 .nav-link-container a {
@@ -43,22 +53,25 @@ img.nav-logo {
   height: 75px;
 }
 
-nav.sticky {
-  background-color: $redBrown;
+nav.topNotch {
+  background-color: $redBrown !important;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  -webkit-backface-visibility: hidden;
+  opacity: 1 !important;
+  // -webkit-backface-visibility: hidden;
 
 }
+
+
 
 // APPARENTLY I FORGOT WHAT MOBILE FIRST WAS WHILE DESIGNING THIS MENU SO HERE ARE THE MEDIA QUERIES LAST
 
 @media only screen
   and (min-device-width: 320px) {
 
-    // nav.sticky {
+    // nav.topNotch {
     //   background-color: $redBrown;
     //   position: fixed;
     //   top: 0;

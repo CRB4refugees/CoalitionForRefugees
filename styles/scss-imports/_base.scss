@@ -1,10 +1,13 @@
-// RESETTING LINKS
-
-
 /* BEGIN MEDIA QUERIES FOR MOBILE SIZED SCREENS */
 
+div.content-container {
+  width: 95%;
+  margin: 2.5%;
+}
+
+
 @media only screen
-  and (min-device-width: 320px) {
+  and (min-device-width: 319px) {
 
     a {
       text-decoration: none;
