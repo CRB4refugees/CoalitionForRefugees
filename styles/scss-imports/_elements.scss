@@ -108,6 +108,55 @@
     	background-color: $redBrown;
     	text-shadow: ntwo;
     }
+
+    ///Thar Two Secondary Buttons
+
+    /* Thar - Secondary Button - Blue */
+
+    a.animated-button.thar-sec {
+      background: $greyBlue70;
+      margin-left: 25px;
+      margin-right: 25px;
+    }
+
+    a.animated-button.thar-sec {
+      color: #fff;
+      cursor: pointer;
+      display: block;
+      position: relative;
+      border: 2px solid $greyBlue;
+      transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    }
+    a.animated-button.thar-sec:hover {
+      color: $black !important;
+      background-color: $greyBlue;
+      text-shadow: ntwo;
+    }
+
+    /* Thar - Tertiary Button */
+
+    a.animated-button.thar-ter {
+      background: $orangeHighlight70;
+      margin-left: 25px;
+      margin-right: 25px;
+    }
+
+    a.animated-button.thar-ter {
+      color: #fff;
+      cursor: pointer;
+      display: block;
+      position: relative;
+      border: 2px solid $orangeHighlight;
+      transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    }
+    a.animated-button.thar-ter:hover {
+      color: $black !important;
+      background-color: $orangeHighlight;
+      text-shadow: ntwo;
+    }
+
+
+
   }
 
 /* BEGIN MEDIA QUERIES FOR TABLET SIZED SCREENS */

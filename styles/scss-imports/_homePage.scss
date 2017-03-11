@@ -108,7 +108,15 @@
 
     .alternative-page-section {
       background: $redBrown;
+      color: $white;
+    }
 
+    .alternative-page-section thar-sec, thar-ter, thar-two {
+      margin-bottom: 10px;
+    }
+
+    .alternative-page-section p,h2 {
+      padding: 10px;
     }
 
 
@@ -157,6 +165,11 @@
       width: 48%;
       margin: 1%;
     }
+
+    .text-cont p {
+      padding: 10px;
+    }
+
     .img-cont {
       order: 0;
       width: 48%;
@@ -180,4 +193,9 @@
       .focal-subheadline {
         font-size: 1.2em;
       }
+
+      .text-cont h2 {
+        font-size: 2.5em;
+      }
+
     }
