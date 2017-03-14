@@ -2,22 +2,27 @@
 <html lang="en">
 {% include head.html %}
 <body>
+
   <div class="focalImg">
     <div class="focal-overlay">
       <div class="focal-text-container">
-        <h1 class="focalHeadline">We help refugees</h1>
-        <p class="focal-subheadline">We are the Coalition for Refugees from Burma, and we help refugees get on their feet and learn the skills they need to become successful in an ever-changing world.</p>
-        <div class="focal-btn-container">
-          <div class="button-container-home">
-            <a href="#" class="btn btn-sm animated-button thar-two">Learn More</a>
-            <a href="#" id="donate-btn-home" class="btn btn-sm animated-button thar-two secondary-btn">Donate</a>
-          </div>
-        </div>
-      </div>
+      <h1 class="focalHeadline">We help refugees</h1>
+      <p class="focal-subheadline">We are the Coalition for Refugees from Burma, and we help refugees get on their feet and learn the skills they need to become successful in an ever-changing world.</p>
+      <div class="focal-btn-container">
+
+  <div class="button-container-home">
+    <a href="#" class="btn btn-sm animated-button thar-two">Learn More</a>
+    <a href="#" id="donate-btn-home" class="btn btn-sm animated-button thar-two secondary-btn">Donate</a>
+  </div>
+
+    </div>
+    </div>
     </div>
   </div> <!-- end focal image div -->
   {% include header.html%}
+
   <div class="content-container">
+
 <!-- BEGINNING OF SECTION ONE -->
     <section class="flex-page-section">
       <div class="text-cont">
@@ -26,6 +31,7 @@
         <div class="button-container-home-page">
           <a href="#" class="btn btn-sm animated-button thar-two">Our Mission</a>
         </div>
+
       </div>
       <div class="img-cont collage9">
         <img class="solo-img" src="/assets/images/Enhanced/GroupShotSQ0.jpg" alt="">
@@ -40,7 +46,7 @@
       </div>
     </section>
 <!-- END OF SECTION ONE -->
-<!--                    -->
+
 <!-- BEGINNING OF SECTION TWO -->
     <section class="flex-page-section alternative-page-section">
       <div class="text-cont">
@@ -49,13 +55,15 @@
         <div class="button-container-home-page">
           <a href="#" class="btn btn-sm animated-button thar-ter">Our Mission</a>
         </div>
+
       </div>
       <div class="img-cont reverse">
         <img class="solo-img" src="/assets/images/Enhanced/FieldTripSQ0.jpg" alt="A group of members graduates from our summer STEP program.">
       </div>
     </section>
 <!-- END OF SECTION TWO -->
-<!--                    -->
+
+
 <!-- BEGINNING OF SECTION THREE -->
     <section class="flex-page-section">
       <div class="text-cont">
@@ -64,15 +72,34 @@
         <div class="button-container-home-page">
           <a href="#" class="btn btn-sm animated-button thar-two">Our Mission</a>
         </div>
+
       </div>
       <div class="img-cont">
         <img class="solo-img" src="/assets/images/Enhanced/GOALSummerProgramGraduation.jpg" alt="">
       </div>
     </section>
 <!-- END OF SECTION THREE -->
-  </div><!-- /.container -->
-  {% include footer.html%}
-  {{ site.jQuery }}
-  {{ site.sticky-nav }}
+
+
+
+
+
+
+
+
+    </div><!-- /.container -->
+
+
+      <!-- {{ content }} -->
+      {% include footer.html%}
+
+      <!-- <footer>
+          &copy; {{ site.time | date: '%Y' }}. All rights reserved.
+      </footer> -->
+
+
+
+    {{ site.jQuery }}
+    {{ site.sticky-nav }}
   </body>
 </html>

@@ -14,7 +14,6 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: The Coalition for Refugees from Burma
-permalink: pretty
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   Coalition for Refugees from Burma (CRB) is a 501(c)(3) non-profit mutual assistance association focused on providing culturally and linguistically appropriate social support services to improve the living conditions and quality of life of refugees resettled in Washington State.
