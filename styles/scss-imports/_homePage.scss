@@ -101,6 +101,26 @@
       height: 33%;
     }
 
+    .collage4 {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      margin: 5% 0;
+      align-items: center;
+      justify-content: space-between;
+      // margin: 25px;
+      // flex-grow: 1;
+    }
+
+    .collage4 img {
+      width: 20%;
+      height: 20%;
+      border-radius: 50%;
+      border: 3px solid $greyBlue;
+
+    }
+
     .button-container-home-page {
       margin: 0 auto;
       width: 60%;
@@ -108,6 +128,11 @@
 
     .alternative-page-section {
       background: $redBrown;
+      color: $white;
+    }
+
+    .alternative-page-section-blue {
+      background: $greyBlue;
       color: $white;
     }
 
@@ -160,9 +185,21 @@
       justify-content: center;
       align-items: center;
     }
+
+    .flex-page-section-full-width-text {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
     .text-cont {
       order: 0;
       width: 48%;
+      margin: 1%;
+    }
+
+    .text-cont-full-width {
+      width: 90%;
       margin: 1%;
     }
 
@@ -177,6 +214,10 @@
     }
 
     .reverse {
+      order: -1;
+    }
+
+    .reverse-blue {
       order: -1;
     }
 
@@ -200,6 +241,18 @@
 
       .text-cont p {
         font-size: 1.2em;
+      }
+
+      .text-cont-full-width h2 {
+        font-size: 2.5em;
+      }
+
+      .text-cont-full-width p {
+        font-size: 1.2em;
+      }
+
+      .text-cont-full-width h3 {
+        font-size: 2em;
       }
 
     }
