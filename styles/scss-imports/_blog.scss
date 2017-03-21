@@ -52,6 +52,10 @@
   margin: 0;
 }
 
+.img-blog-thumbnail {
+  width: 50%;
+}
+
 
 
 
@@ -78,6 +82,8 @@
 
     .twitter-timeline-cont {
       width: 33%;
+      height: 500px;
+      overflow: hidden;
     }
 
     .blog-widget-cont {
@@ -87,6 +93,7 @@
       list-style-type: none;
       margin: 10px;
       order: 2;
+      flex-grow: 1;
 
     }
 
