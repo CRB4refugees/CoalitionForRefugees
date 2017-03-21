@@ -144,6 +144,20 @@
       padding: 10px;
     }
 
+    .social-container {
+      display: flex;
+      flex-direction: row;
+      margin: 25px auto;
+      width: 75%;
+      justify-content: space-around;
+    }
+
+    .social-item img {
+      width: 32px;
+
+    }
+
+
 
 
 
@@ -220,6 +234,15 @@
     .reverse-blue {
       order: -1;
     }
+
+    .social-container {
+      display: flex;
+      flex-direction: row;
+      margin: 25px auto;
+      width: 33.3333%;
+      justify-content: space-around;
+    }
+
 
 
 }
