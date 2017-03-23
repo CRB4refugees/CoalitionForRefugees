@@ -12,7 +12,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: $redBrown;
-  transition: all 0.5s ease-in;
+  transition: all 1s ease-in;
   z-index: 10
 
 
@@ -21,7 +21,7 @@ nav {
 nav#responsive-sticky-nav {
   background-color: $redBrown;
   opacity: 1 !important;
-  transition: all 0.5s ease;
+  transition: all 1s ease;
 
 }
 

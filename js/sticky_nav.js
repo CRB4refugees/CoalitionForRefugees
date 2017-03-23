@@ -1,15 +1,22 @@
 'use strict';
 
-//jQuery allowing for a sticky navigation
+//jQuery sticky navigation
 
 $(window).scroll(function() {
 
 if (window.innerWidth  > 300){ //requires that the window is larger than small phone to work
 
-  const focalImg = $('.focalImg');
+  if (!$('.focal-overlay').length) {
+    var imgHeight = 0;
+  } else {
+    var focalImg = $('.focal-overlay');
+    var imgHeight = focalImg.height();
+  }
+
   // console.log(focalImg);
-  const imgHeight = focalImg.height();
-  // console.log(imgHeight);
+
+
+  console.log(imgHeight);
 
 
 if ($(this).scrollTop() > imgHeight){
