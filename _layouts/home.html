@@ -3,69 +3,62 @@
 <html lang="en">
 {% include head.html %}
 <body>
-
   <div class="focalImg">
     <div class="focal-overlay">
       <div class="focal-text-container">
-      <h1 class="focalHeadline">We help refugees</h1>
-      <p class="focal-subheadline">We are the Coalition for Refugees from Burma, and we help refugees get on their feet and learn the skills they need to become successful in an ever-changing world.</p>
-      <div class="focal-btn-container">
-
-  <div class="button-container-home">
-    <a href="#" class="btn btn-sm animated-button thar-two">Learn More</a>
-    <a href="#" id="donate-btn-home" class="btn btn-sm animated-button thar-two">Donate</a>
-  </div>
-
-    </div>
-    </div>
+        <h1 class="focalHeadline">We help refugees</h1>
+        <p class="focal-subheadline">We are the Coalition for Refugees from Burma, and we help refugees get on their feet and learn the skills they need to become successful in an ever-changing world.</p>
+        <div class="focal-btn-container">
+          <div class="button-container-home">
+            <a href="#" class="btn btn-sm animated-button thar-two">Learn More</a>
+            <a href="#" id="donate-btn-home" class="btn btn-sm animated-button thar-two secondary-btn">Donate</a>
+          </div>
+          {% include social-media.html %}
+        </div>
+      </div>
     </div>
   </div> <!-- end focal image div -->
   {% include header.html%}
-
   <div class="content-container">
-
-<!-- BEGINNING OF SECTION ONE -->
+    <!-- BEGINNING OF SECTION ONE -->
     <section class="flex-page-section">
       <div class="text-cont">
-        <h2>What we do</h2>
+        <h2>Helping adjust, overcome and thrive</h2>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
         <div class="button-container-home-page">
           <a href="#" class="btn btn-sm animated-button thar-two">Our Mission</a>
         </div>
-
       </div>
       <div class="img-cont collage9">
-        <img class="solo-img" src="http://placehold.it/500x500" alt="">
-        <img class="solo-img" src="http://placehold.it/500x500" alt="">
-        <img class="solo-img" src="http://placehold.it/500x500" alt="">
-        <img class="solo-img" src="http://placehold.it/500x500" alt="">
-        <img class="solo-img" src="http://placehold.it/500x500" alt="">
-        <img class="solo-img" src="http://placehold.it/500x500" alt="">
-        <img class="solo-img" src="http://placehold.it/500x500" alt="">
-        <img class="solo-img" src="http://placehold.it/500x500" alt="">
-        <img class="solo-img" src="http://placehold.it/500x500" alt="">
+        <img class="solo-img" src="/assets/images/Enhanced/GroupShotSQ0.jpg" alt="">
+        <img class="solo-img" src="/assets/images/Enhanced/TeyAndAbdullahiSQ.jpg" alt="">
+        <img class="solo-img" src="/assets/images/Enhanced/ComputerLiteracyAdultSQ0.jpg" alt="">
+        <img class="solo-img" src="/assets/images/Enhanced/ComputerTrainingSQ0.jpg" alt="">
+        <img class="solo-img" src="/assets/images/Enhanced/OutsideStepLadderSQ.jpg" alt="">
+        <img class="solo-img" src="/assets/images/Enhanced/ClassroomSQ3.jpg" alt="">
+        <img class="solo-img" src="/assets/images/Enhanced/FieldTripSQ3.jpg" alt="">
+        <img class="solo-img" src="/assets/images/Enhanced/FieldTripGroupSQ0.jpg" alt="">
+        <img class="solo-img" src="/assets/images/Enhanced/ClassroomSQ2.jpg" alt="">
       </div>
     </section>
-<!-- END OF SECTION ONE -->
-
-<!-- BEGINNING OF SECTION TWO -->
-    <section class="flex-page-section">
+    <!-- END OF SECTION ONE -->
+    <!--                    -->
+    <!-- BEGINNING OF SECTION TWO -->
+    <section class="flex-page-section alternative-page-section">
       <div class="text-cont">
-        <h2>What we do</h2>
+        <h2>Our programs</h2>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
         <div class="button-container-home-page">
-          <a href="#" class="btn btn-sm animated-button thar-two">Our Mission</a>
+          <a href="#" class="btn btn-sm animated-button thar-ter">Our Mission</a>
         </div>
-
       </div>
       <div class="img-cont reverse">
-        <img class="solo-img" src="http://placehold.it/500x500" alt="">
+        <img class="solo-img" src="/assets/images/Enhanced/FieldTripSQ0.jpg" alt="A group of members graduates from our summer STEP program.">
       </div>
     </section>
-<!-- END OF SECTION TWO -->
-
-
-<!-- BEGINNING OF SECTION THREE -->
+    <!-- END OF SECTION TWO -->
+    <!--                    -->
+    <!-- BEGINNING OF SECTION THREE -->
     <section class="flex-page-section">
       <div class="text-cont">
         <h2>What we do</h2>
@@ -73,34 +66,31 @@
         <div class="button-container-home-page">
           <a href="#" class="btn btn-sm animated-button thar-two">Our Mission</a>
         </div>
-
       </div>
       <div class="img-cont">
-        <img class="solo-img" src="http://placehold.it/500x500" alt="">
+        <img class="solo-img" src="/assets/images/Enhanced/GOALSummerProgramGraduation.jpg" alt="">
       </div>
     </section>
-<!-- END OF SECTION THREE -->
+    <!-- END OF SECTION THREE -->
+    <h2 class="recent-posts-widget-title">Our Recent Posts and Tweets</h2>
 
-
-
-
-
-
-
-
-    </div><!-- /.container -->
-
-
-      <!-- {{ content }} -->
-      {% include footer.html%}
-
-      <!-- <footer>
-          &copy; {{ site.time | date: '%Y' }}. All rights reserved.
-      </footer> -->
-
-
-
-    {{ site.jQuery }}
-    {{ site.sticky-nav }}
+    <div class="twitter-and-blog-widget-cont">
+      <div class="twitter-timeline-cont">
+        <a class="twitter-timeline" data-height="500" data-link-color="#3a506b" data-tweet-limit="5" href="https://twitter.com/BurmaRefugees">Tweets by BurmaRefugees</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+      <ul class="blog-widget-cont">
+        {% for post in site.posts limit:3 %}
+          <li class="post-widget-cont">
+            <a class="post-widget-title" href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+            {{ post.excerpt }}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% include fourWideCircleImages.html%}
+  </div><!-- /.container -->
+  {% include footer.html%}
+  {{ site.jQuery }}
+  {{ site.sticky-nav }}
   </body>
 </html>
