@@ -5,6 +5,14 @@
   background-image: url(/assets/images/Enhanced/Group2.jpg);
 }
 
+#OurProgramsHeader {
+  background-image: url(/assets/images/Enhanced/FieldTripGroup0.jpg)
+}
+
+#GetInvolvedHeader {
+  background-image: url(/assets/images/Enhanced/GOALSummerProgramGraduation.jpg)
+}
+
 .focal-overlay-our-mission {
   display: flex;
   width: 100%;
@@ -15,6 +23,12 @@
   border-bottom: 1px solid $redBrown;
 
 }
+
+#employment-headline {
+  font-size: 3em;
+}
+
+
 
 .focalHeadline-page {
   text-align: center;
@@ -41,6 +55,12 @@
   background: $greyBlue;
 }
 
+#classroom-tutor {
+  text-align: center;
+}
+
+
+
 @media only screen
   and (min-device-width: 320px) {}
 
@@ -55,6 +75,10 @@
       text-align: center;
     }
 
+    .standalone-p {
+      font-size: 1.2em;
+      margin: 0 1.5vw;
+    }
 
   }
 

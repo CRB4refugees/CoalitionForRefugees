@@ -8,7 +8,11 @@
     }
 
     p a:hover {
-      color: $white;
+      color: $greyBlue;
+    }
+
+    p .inline-anchor:hover {
+      color: $greyBlue;
     }
 
     .custom-btn-medium-red {
