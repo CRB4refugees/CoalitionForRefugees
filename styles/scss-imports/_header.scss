@@ -1,5 +1,9 @@
 /* BEGIN MEDIA QUERIES FOR MOBILE SIZED SCREENS */
 
+#buffer {
+  visibility: none;
+}
+
 header {
   margin: 0;
   padding: 0;
@@ -13,7 +17,7 @@ nav {
   align-items: center;
   background-color: $redBrown;
   transition: all 1s ease-in;
-  z-index: 10
+  z-index: 10;
 
 
 }
