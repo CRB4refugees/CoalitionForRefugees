@@ -20,7 +20,7 @@ description: > # this means to ignore newlines until "baseurl:"
 tagline: We help refugees.
 jQuery: <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 sticky-nav: <script src="/js/sticky_nav.js"></script>
-kon: <script type="text/javascript" src="js/kon.js"></script>
+kon: <script type="text/javascript" src="/js/kon.js"></script>
 mobile-nav: <script type="text/javascript" src="/js/menu.js"></script>
 
 

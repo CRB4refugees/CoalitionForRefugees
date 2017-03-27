@@ -5,6 +5,7 @@
 <link rel="stylesheet" href="/styles/style.css">
 {% include head.html %}
 <body>
+  {% include mobile_nav.html %}
   {% include header.html%}
 
 
@@ -12,9 +13,9 @@
 {{content}}
 
 
+{% include fourWideCircleImages.html%}
 
 {% include footer.html %}
-{{ site.jQuery }}
-{{ site.sticky-nav }}
+
 </body>
 </html>
