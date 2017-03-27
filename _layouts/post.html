@@ -8,9 +8,29 @@
   {% include mobile_nav.html %}
   {% include header.html%}
 
+<div id="post-container">
+<div class="post-content">
+  <h2 class="post-post-title">
+    {{ page.title }}
+  </h2>
+  <p class="post-post-subtitle">
+    {{ page.description }}
+  </p>
+  <hr>
+  {{content}}
+</div>
+<div class="posts-recent-posts">
+  <ul class="blog-widget-cont">
+    {% for post in site.posts limit:3 %}
+      <li class="post-widget-cont">
+        <a class="post-widget-title" href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+        {{ post.excerpt }}
+      </li>
+    {% endfor %}
+</div>
 
+</div>
 
-{{content}}
 
 
 {% include fourWideCircleImages.html%}

@@ -1,1 +1,47 @@
 //blogroll styles
+
+
+
+
+#post-container {
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    padding: 0 10px;
+  }
+
+  h4 {
+    padding: 0 10px;
+  }
+
+  p {
+    padding: 0 10px;
+
+  }
+
+  a {
+
+  }
+
+  img {
+    width: 100%;
+  }
+
+  hr {
+    margin: 0 10px;
+  }
+
+  .post-content {
+
+  }
+
+  .post-post-title {
+
+  }
+
+  .post-post-subtitle {
+
+  }
+
+}
