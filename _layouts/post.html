@@ -8,8 +8,10 @@
   {% include mobile_nav.html %}
   {% include header.html%}
 
+
 <div id="post-container">
 <div class="post-content">
+  <img class="post-focal-img" src="/assets/images/child-refugees.jpg" alt="Coalition for Refugees from Burma">
   <h2 class="post-post-title">
     {{ page.title }}
   </h2>
@@ -20,11 +22,12 @@
   {{content}}
 </div>
 <div class="posts-recent-posts">
+  <h4>Recent posts</h4>
   <ul class="blog-widget-cont">
     {% for post in site.posts limit:3 %}
       <li class="post-widget-cont">
         <a class="post-widget-title" href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
-        {{ post.excerpt }}
+        {{ post.description }}
       </li>
     {% endfor %}
 </div>

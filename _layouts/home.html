@@ -4,7 +4,6 @@
 {% include head.html %}
 <body>
   {% include mobile_nav.html %}
-
   <div class="focalImg">
     <div class="focal-overlay">
       <div class="focal-text-container">
@@ -68,7 +67,7 @@
         <p>Interested in helping those in need? Our Get Involved page has info on how you can do just that.</p>
         <div class="button-container-home-page">
           <a href="/GetInvolved" class="btn btn-sm animated-button thar-two">Get Involved</a>
-          <a href="/Blog" class="btn btn-sm animated-button thar-two">Our Blog</a>
+          <a href="/CRB_blog" class="btn btn-sm animated-button thar-two">Our Blog</a>
         </div>
       </div>
       <div class="img-cont">
@@ -77,16 +76,15 @@
     </section>
     <!-- END OF SECTION THREE -->
     <h2 class="recent-posts-widget-title">Our Recent Posts and Tweets</h2>
-
     <div class="twitter-and-blog-widget-cont">
       <div class="twitter-timeline-cont">
         <a class="twitter-timeline" data-height="500" data-link-color="#3a506b" data-tweet-limit="5" href="https://twitter.com/BurmaRefugees">Tweets by BurmaRefugees</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
       <ul class="blog-widget-cont">
-        {% for post in site.posts limit:3 %}
+        {% for post in site.posts limit:5 %}
           <li class="post-widget-cont">
             <a class="post-widget-title" href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
-            {{ post.excerpt }}
+            {{ post.description }}
           </li>
         {% endfor %}
       </ul>

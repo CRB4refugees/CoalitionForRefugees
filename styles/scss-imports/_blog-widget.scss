@@ -4,17 +4,20 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 50px;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .blog-widget-cont {
+  display: flex;
+  flex-direction: column;
   width: 90%;
   margin: 0;
   padding: 0;
   overflow: scroll;
   list-style-type: none;
-  margin: 10px;
+  margin: 10px auto;
   order: -1;
+  margin-bottom: auto;
 }
 
 .twitter-timeline-cont {
@@ -88,7 +91,7 @@
 
     .blog-widget-cont {
       width: 66%;
-      height: 500px;
+      // height: 500px;
       overflow: scroll;
       list-style-type: none;
       margin: 10px;
@@ -99,7 +102,7 @@
 
     .blog-widget-cont {
       width: 66%;
-      height: 500px;
+      // height: 500px;
       overflow: scroll;
       list-style-type: none;
       margin: 10px;

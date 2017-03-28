@@ -16,3 +16,15 @@ A website for the Coalition for Refugees from Burma.
 6. (optional) {% include fourWideCircleImages.html%}
 
 7. {% include footer.html%}
+
+8. Image: consider in tandem with front matter:
+
+---
+image: path/to/post/image.jpg
+---
+
+{% if page.image %}
+<meta property="og:image" content="path/to/post/image.jpg">
+{% else %}
+<meta property="og:image" content="path/to/page/image.jpg">
+{% endif %}
