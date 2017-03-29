@@ -1,13 +1,43 @@
----
-title: Get Involved
-permalink: GetInvolved.html
----
-
 <!DOCTYPE html>
 <html lang="en">
-{% include head.html %}
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <!-- CSS -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css"> -->
+  <link rel="stylesheet" href="/styles/style.css">
+  <title>
+    
+      Get Involved &middot; The Coalition for Refugees from Burma
+    
+  </title>
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="public/favicon.ico">
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="The Coalition for Refugees from Burma" href="atom.xml">
+</head>
+
 <body>
-  {% include mobile_nav.html %}
+  <div id="mobileContainer">
+  <a id="nav-title-upper" class="nav-upperleft hide" href="/">
+    <!-- <img class="nav-logo" src="/assets/images/burma-logo.png" alt="The Coalition for Refugees from Burma"> -->
+    <h3 id="mobile-nav-title">Coalition for Refugees from Burma</h4>
+    <hr>
+  </a>
+  <a id="exit-mobile-nav-btn" href="#"><img id="exit-btn" src="/assets/icons/png/001-close.png" alt="Exit Navigation"></a>
+  <ul id="mobile-nav-ul">
+    <li class="mobile-nav-li"><a class="mobile-nav-a" href="/">Home</a></li>
+    <li class="mobile-nav-li"><a class="mobile-nav-a" href="/OurMission">Our Mission</a></li>
+    <li class="mobile-nav-li"><a class="mobile-nav-a" href="/Programs">Programs</a></li>
+    <li class="mobile-nav-li"><a class="mobile-nav-a" href="/GetInvolved">Get Involved</a></li>
+    <li class="mobile-nav-li"><a class="mobile-nav-a" href="/CRB_blog">Blog</a></li>
+    <li class="mobile-nav-li"><a class="mobile-nav-a" target="_blank" href="https://crburma.ejoinme.org/crbdonationpage">Donate</a></li>
+  </ul>
+</div>
+
   <div id="GetInvolvedHeader" class="focalImg">
     <div class="focal-overlay">
       <div class="focal-text-container">
@@ -18,12 +48,34 @@ permalink: GetInvolved.html
             <a href="#" class="btn btn-sm animated-button thar-two">Learn More</a>
             <a href="#" id="donate-btn-home" class="btn btn-sm animated-button thar-two secondary-btn">Donate</a>
           </div> -->
-          {% include social-media.html %}
+          <div class="social-container">
+  <a class="social-item" href="https://www.facebook.com/BurmaRefugees/" target="_blank"><img src="/assets/icons/png/006-facebook.png" alt="The Coalition for Refugees from Burma"></a>
+  <a class="social-item" href="https://twitter.com/BurmaRefugees" target="_blank"><img src="/assets/icons/png/005-twitter.png" alt="The Coalition for Refugees from Burma"></a>
+  <a class="social-item" href="https://www.instagram.com/BurmaRefugees/" target="_blank"><img src="/assets/icons/png/004-instagram.png" alt="The Coalition for Refugees from Burma"></a>
+</div>
+
         <!-- </div> -->
       </div>
     </div>
   </div> <!-- end focal image div -->
-  {% include header.html%}
+  <header>
+  <nav id="responsive-sticky-nav">
+    <a class="nav-upperleft" href="/">
+      <img class="nav-logo" src="/assets/images/burma-logo.png" alt="The Coalition for Refugees from Burma">
+      <h4 class="nav-title">Coalition for Refugees from Burma</h4>
+    </a>
+    <div class="nav-link-container">
+      <a class="nav-links" href="/OurMission"><h4>Our Mission</h4></a>
+      <a class="nav-links" href="/Programs"><h4>Programs</h4></a>
+      <a class="nav-links" href="/GetInvolved"><h4>Get Involved</h4></a>
+      <a class="nav-links" href="/CRB_blog"><h4>Blog</h4></a>
+      <a class="nav-links nav-donate" href="https://crburma.ejoinme.org/crbdonationpage" target="_blank"><h4>Donate</h4></a>
+      <a id="nav-menu-link" href="#"><img src="/assets/icons/png/002-menu.png" alt="Menu"></a>
+    </div>
+  </nav>
+</header>
+<div id="buffer"> </div>
+
   <div class="content-container">
 
 <!-- MAJOR HEADLINE: EMPLOYMENT -->
@@ -119,11 +171,65 @@ permalink: GetInvolved.html
       </div>
     </section>
 
-    {% include fourWideCircleImages.html%}
+    <!-- BEGIN 4 WIDE ROW IMAGE CONTAINER -->
+<div class="collage4">
+  <img class="" src="/assets/images/Enhanced/ClassroomSQ3.jpg" alt="">
+  <img class="" src="/assets/images/Enhanced/GroupShotSQ1.jpg" alt="">
+  <img class="" src="/assets/images/Enhanced/AdultTrainingSQ1.jpg" alt="">
+  <img class="" src="/assets/images/Enhanced/MayAndIlhan-AyanSQ.jpg" alt="">
+</div>
+<!-- END 4 WIDE ROW IMAGE CONTAINER -->
+
 
   </div><!-- /.container -->
-  {% include footer.html%}
-  {{ site.jQuery }}
-  {{ site.sticky-nav }}
+  <footer>
+  <div class="footer-cont">
+    <!-- GRAPHICS FOR FOOTER IN CSS -->
+    <div id="seattle-skyline"></div>
+    <div id="forest-skyline"></div>
+    <div id="footer-touchup"></div>
+    <div class="footer-flex-cont">
+    <div id="footer-logo-cont">
+      <a href="#">
+        <h3>CRB © 2017</h3>
+      </a>
+    </div>
+    <div class="link-ul-cont">
+      <ul class="footer-btn-cont">
+          <li>
+            <a href="/OurMission"><h4 class="footer-site-map">Mission</h4></a>
+          </li>
+          <li>
+            <a href="/Programs"><h4 class="footer-site-map">Programs</h4></a>
+          </li>
+          <li>
+            <a href="/GetInvolved"><h4 class="footer-site-map">Get Involved</h4></a>
+          </li>
+          <li>
+            <a href="https://crburma.ejoinme.org/crbdonationpage" target="_blank"><h4 class="footer-site-map">Donate</h4></a>
+          </li>
+      </ul>
+      <ul class="footer-btn-cont">
+          <li>
+            <a href="/ContactUs"><h4 class="footer-site-map">Contact</h4></a>
+          </li>
+          <li>
+            <a href="/GetInvolved"><h4 class="footer-site-map">Careers</h4></a>
+          </li>
+          <li>
+            <a href="/Attribution"><h4 class="footer-site-map">Attribution</h4></a>
+          </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="/js/sticky_nav.js"></script>
+<script type="text/javascript" src="/js/menu.js"></script>
+<script type="text/javascript" src="/js/kon.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="/js/sticky_nav.js"></script>
   </body>
 </html>
