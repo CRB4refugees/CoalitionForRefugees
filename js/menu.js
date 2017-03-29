@@ -1,43 +1,30 @@
-// NOTE THIS HASN'T BEEN CONFIGURED YET
-
 'use strict';
 
-var navIcon = document.getElementById('navIcon');
-var exitNav = document.getElementById('exitNav');
-var overLayMenu = document.getElementById('overlayMenu');
-var bodyEl = document.querySelector('body');
+//Declare variable that for elements in use.
+const navIcon = document.getElementById('nav-menu-link');
+const exitNav = document.getElementById('exit-mobile-nav-btn');
+const overlayMenu = document.getElementById('mobileContainer');
+const bodyEl = document.querySelector('body');
+const mobileTopBar = document.getElementById('responsive-sticky-nav');
 
 
-
-var showNav = function() {
-  console.log('click event engaged');
-  overlayMenu.classList.remove('hide');
-  overlayMenu.classList.add('stop-scrolling');
-};
-
-var removeNav = function() {
-  console.log('remove nav engaged');
-  overlayMenu.classList.add('hide');
-  overlayMenu.classList.add('stop-scrolling');
-
-};
-
-
-const preventDef = function(e) {
+//function to add visibility (-> display: flex) to mobile menu
+const showNav = function(e) {
+  e.preventDefault();
+  overlayMenu.style.display = "flex";
+  // console.log('show nav engaged');
   // console.log(e);
-  var shown = overlayMenu.classList.contains("hide");
-  // console.log(shown);
-  if (!shown) {
-    e.preventDefault();
-  }
-  // else {
-  //   // console.log('not prevented');
-  // }
+};
+
+//function to remove visibility (-> display: none) from mobile menu
+const removeNav = function(e) {
+  e.preventDefault();
+  overlayMenu.style.display = "none";
+  // console.log('remove nav engaged');
+  // console.log(e);
 };
 
 
+// add event listeners to menu and exit icons
 navIcon.addEventListener("click", showNav);
 exitNav.addEventListener("click", removeNav);
-// bodyEl.addEventListener('touchmove', preventDef);
-
-// overlayMenu.addEventListener("click", checkMenu());

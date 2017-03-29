@@ -3,6 +3,7 @@
 <html lang="en">
 {% include head.html %}
 <body>
+  {% include mobile_nav.html %}
   <div class="focalImg">
     <div class="focal-overlay">
       <div class="focal-text-container">
@@ -10,8 +11,8 @@
         <p class="focal-subheadline">We are the Coalition for Refugees from Burma, and we help refugees get on their feet and learn the skills they need to become successful in an ever-changing world.</p>
         <div class="focal-btn-container">
           <div class="button-container-home">
-            <a href="#" class="btn btn-sm animated-button thar-two">Learn More</a>
-            <a href="#" id="donate-btn-home" class="btn btn-sm animated-button thar-two secondary-btn">Donate</a>
+            <a href="/OurMission" class="btn btn-sm animated-button thar-two">Learn More</a>
+            <a href="https://crburma.ejoinme.org/crbdonationpage" target="_blank" id="donate-btn-home" class="btn btn-sm animated-button thar-two secondary-btn">Donate</a>
           </div>
           {% include social-media.html %}
         </div>
@@ -24,9 +25,9 @@
     <section class="flex-page-section">
       <div class="text-cont">
         <h2>Helping adjust, overcome and thrive</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <p>Our primary mission is to aid refugees who have resettled to the Seattle area - and we are devoted to this mission!</p>
         <div class="button-container-home-page">
-          <a href="#" class="btn btn-sm animated-button thar-two">Our Mission</a>
+          <a href="/OurMission" class="btn btn-sm animated-button thar-two">Our Mission</a>
         </div>
       </div>
       <div class="img-cont collage9">
@@ -46,10 +47,10 @@
     <!-- BEGINNING OF SECTION TWO -->
     <section class="flex-page-section alternative-page-section">
       <div class="text-cont">
-        <h2>Our programs</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <h2>Programs for all ages</h2>
+        <p>The Coalition for Refugees from Burma has programs and classes for all ages - from technology programs for adults to after school programs for students. See our programs page for more information.</p>
         <div class="button-container-home-page">
-          <a href="#" class="btn btn-sm animated-button thar-ter">Our Mission</a>
+          <a href="/Programs" class="btn btn-sm animated-button thar-ter">Programs</a>
         </div>
       </div>
       <div class="img-cont reverse">
@@ -61,10 +62,12 @@
     <!-- BEGINNING OF SECTION THREE -->
     <section class="flex-page-section">
       <div class="text-cont">
-        <h2>What we do</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <h2>Learn more about what we do</h2>
+        <p>Want to find out more about us? Read the CRB blog to get up to date information on everything CRB-related!</p>
+        <p>Interested in helping those in need? Our Get Involved page has info on how you can do just that.</p>
         <div class="button-container-home-page">
-          <a href="#" class="btn btn-sm animated-button thar-two">Our Mission</a>
+          <a href="/GetInvolved" class="btn btn-sm animated-button thar-two">Get Involved</a>
+          <a href="/CRB_blog" class="btn btn-sm animated-button thar-two">Our Blog</a>
         </div>
       </div>
       <div class="img-cont">
@@ -73,16 +76,27 @@
     </section>
     <!-- END OF SECTION THREE -->
     <h2 class="recent-posts-widget-title">Our Recent Posts and Tweets</h2>
-
     <div class="twitter-and-blog-widget-cont">
       <div class="twitter-timeline-cont">
         <a class="twitter-timeline" data-height="500" data-link-color="#3a506b" data-tweet-limit="5" href="https://twitter.com/BurmaRefugees">Tweets by BurmaRefugees</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
       <ul class="blog-widget-cont">
-        {% for post in site.posts limit:3 %}
+        {% for post in site.posts limit:4 %}
           <li class="post-widget-cont">
-            <a class="post-widget-title" href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
-            {{ post.excerpt }}
+            {% assign images = post.content | split:"<img " %}
+            {% for image in images %}
+              {% if image contains 'src=' %}
+                {% assign imageMarkup = image | split:">" | first %}
+                <img {{ imageMarkup }}{:.post-thumbnail}>
+                {% break %}
+              {% endif %}
+            {% endfor %}
+            <div blog-roll-text-cont>
+            <a class="post-widget-title" href="{{ post.url }}"><h3>{{ post.title }}</h3>
+            {{ post.description }}
+            {{ post.firstImg }}
+            </a>
+            </div>
           </li>
         {% endfor %}
       </ul>
@@ -90,7 +104,6 @@
     {% include fourWideCircleImages.html%}
   </div><!-- /.container -->
   {% include footer.html%}
-  {{ site.jQuery }}
-  {{ site.sticky-nav }}
+
   </body>
 </html>
