@@ -25,6 +25,8 @@ $(window).scroll(function() {
     if ($(this).scrollTop() > imgHeight){
           $('nav#responsive-sticky-nav').addClass("topNotch");
           $('#buffer').show();
+
+
       }
       else{
           $('nav#responsive-sticky-nav').removeClass("topNotch");
