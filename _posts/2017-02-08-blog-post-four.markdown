@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Blog Post One!"
-date:   2017-02-06 17:11:47 -0800
+title: Blog Post One!
+date: '2017-02-07T01:11:47.000+00:00'
 categories: jekyll update
 description: <p>"This is the description of the post"</p>
 ---
