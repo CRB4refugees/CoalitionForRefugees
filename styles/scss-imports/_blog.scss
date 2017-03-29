@@ -1,8 +1,5 @@
 //blogroll styles
 
-
-
-
 #post-container {
   display: flex;
   flex-direction: column;
@@ -20,7 +17,6 @@
   h3 {
     font-size: 1.8em;
     padding: 0 10px;
-
   }
 
   h4 {
@@ -30,12 +26,18 @@
 
   p {
     padding: 0 10px;
-
   }
 
   a {
 
   }
+
+  ul {
+    padding: 0;
+    -webkit-padding-start: 0px;
+  }
+
+
 
   img {
     width: 100%;
@@ -66,6 +68,9 @@
     width: 95%;
     margin: 2.5%;
   }
+
+
+
 }
 
 .posts-recent-posts {
@@ -86,13 +91,74 @@
     }
 }
 
+.img-blog-thumbnail {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+
+}
+
+.blog-roll-cont {
+  width: calc(100% - 10px);
+  // background-color: $greyBlue70;
+  border: 5px solid $redBrown;
+  list-style-type: none;
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+  -webkit-box-shadow: -1px 2px 12px -2px rgba(115,130,134,1);
+  -moz-box-shadow: -1px 2px 12px -2px rgba(115,130,134,1);
+  box-shadow: -1px 2px 12px -2px rgba(115,130,134,1);
+
+
+}
+
+
+
+
 @media only screen
   and (min-device-width: 767px) {
+
+    #blog-roll {
+      display: flex;
+      flex-direction: row;
+      width: 95%;
+      flex-wrap: wrap;
+      // margin: 0 auto;
+      justify-content: space-around;
+    }
+
+
+    .blog-roll-cont {
+      // flex-direction: row;
+      flex-wrap: wrap;
+      // height: 500px;
+      list-style-type: none;
+      // margin: 10px;
+      width: 45%;
+    }
+
+    .post-widget-cont {
+      width: 45%;
+      margin: 1%;
+      -webkit-box-shadow: -1px 2px 12px -2px rgba(115,130,134,1);
+      -moz-box-shadow: -1px 2px 12px -2px rgba(115,130,134,1);
+      box-shadow: -1px 2px 12px -2px rgba(115,130,134,1);
+
+    }
+
+
     #post-container {
       .post-content {
         width: 80%;
         margin: 25px auto;
       }
+
+    .blog-roll-cont {
+      width: 50%;
+    }
+
+
     }
 
     .posts-recent-posts {
@@ -126,4 +192,14 @@
 }
 
 @media only screen
-    and (min-device-width: 1400px) {}
+    and (min-device-width: 1400px) {
+
+      .blog-roll-cont {
+        // flex-direction: row;
+        flex-wrap: wrap;
+        // height: 500px;
+        list-style-type: none;
+        // margin: 10px;
+        width: 23%;
+      }
+    }

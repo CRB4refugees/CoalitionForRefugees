@@ -11,8 +11,8 @@
         <p class="focal-subheadline">We are the Coalition for Refugees from Burma, and we help refugees get on their feet and learn the skills they need to become successful in an ever-changing world.</p>
         <div class="focal-btn-container">
           <div class="button-container-home">
-            <a href="#" class="btn btn-sm animated-button thar-two">Learn More</a>
-            <a href="#" id="donate-btn-home" class="btn btn-sm animated-button thar-two secondary-btn">Donate</a>
+            <a href="/OurMission" class="btn btn-sm animated-button thar-two">Learn More</a>
+            <a href="https://crburma.ejoinme.org/crbdonationpage" target="_blank" id="donate-btn-home" class="btn btn-sm animated-button thar-two secondary-btn">Donate</a>
           </div>
           {% include social-media.html %}
         </div>
@@ -81,10 +81,22 @@
         <a class="twitter-timeline" data-height="500" data-link-color="#3a506b" data-tweet-limit="5" href="https://twitter.com/BurmaRefugees">Tweets by BurmaRefugees</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
       <ul class="blog-widget-cont">
-        {% for post in site.posts limit:5 %}
+        {% for post in site.posts limit:4 %}
           <li class="post-widget-cont">
-            <a class="post-widget-title" href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+            {% assign images = post.content | split:"<img " %}
+            {% for image in images %}
+              {% if image contains 'src=' %}
+                {% assign imageMarkup = image | split:">" | first %}
+                <img {{ imageMarkup }}{:.post-thumbnail}>
+                {% break %}
+              {% endif %}
+            {% endfor %}
+            <div blog-roll-text-cont>
+            <a class="post-widget-title" href="{{ post.url }}"><h3>{{ post.title }}</h3>
             {{ post.description }}
+            {{ post.firstImg }}
+            </a>
+            </div>
           </li>
         {% endfor %}
       </ul>

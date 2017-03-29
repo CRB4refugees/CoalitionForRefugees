@@ -13,6 +13,9 @@ Banjo pitchfork keffiyeh, mustache etsy readymade PBR&B. Flannel cray distillery
 
 Hot chicken fashion axe banjo DIY try-hard actually, knausgaard skateboard. Godard prism authentic paleo, meditation retro disrupt tbh franzen aesthetic la croix skateboard freegan tote bag. Slow-carb meditation flannel sriracha lyft. Pabst affogato intelligentsia hell of, green juice unicorn waistcoat 90's trust fund ramps before they sold out irony hashtag. Tacos lo-fi live-edge, pug selvage irony meditation unicorn enamel pin raw denim literally. Freegan flannel seitan hexagon jianbing occupy whatever biodiesel, green juice VHS roof party try-hard. Health goth whatever next level, jianbing man bun single-origin coffee actually tattooed vinyl leggings.
 
+![Group Photo](/assets/images/Enhanced/Group1.jpg){:class="img-blog-thumbnail"}
+
+
 [jekyll-docs]: http://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 [jekyll-talk]: https://talk.jekyllrb.com/

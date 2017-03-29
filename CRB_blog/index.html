@@ -1,55 +1,36 @@
 ---
-title: Coalition for Refugees from Burma - Blog
+title: Our Blog
 permalink: CRB_blog.html
 ---
 <!DOCTYPE html>
 <html lang="en">
 {% include head.html %}
 <body>
-  <!-- <div id="GetInvolvedHeader" class="focalImg">
-    <div class="focal-overlay">
-      <div class="focal-text-container">
-        <h1 class="focalHeadline">Blog</h1>
-        <h2 class="focal-subheadline">Interested in joining our team of enthusiastic and talented staff and volunteers? Check out our employment and volunteer opportunities below!</h2>
-        <!-- <div class="focal-btn-container"> -->
-          <!-- <div class="button-container-home">
-            <a href="#" class="btn btn-sm animated-button thar-two">Learn More</a>
-            <a href="#" id="donate-btn-home" class="btn btn-sm animated-button thar-two secondary-btn">Donate</a>
-          </div> -->
-          <!-- {% include social-media.html %} -->
-        <!-- </div> -->
       {% include mobile_nav.html %}
-
       {% include header.html%}
-
-
-      </div>
-    </div>
-  </div> <!-- end focal image div -->
-
-  <div class="content-container">
-
-
-    <ul class="blog-widget-cont">
-      {% for post in site.posts %}
-        <li class="post-widget-cont">
-          <a class="post-widget-title" href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
-          {{ post.excerpt }}
-        </li>
-      {% endfor %}
-    </ul>
-
-
-
-
-
-
-
-  {% include fourWideCircleImages.html%}
-
-  </div><!-- /.container -->
-
-  {% include footer.html %}
-
+      <div class="content-container">
+        <ul id="blog-roll" class="">
+          {% for post in site.posts %}
+            <li class="blog-roll-cont">
+              {% assign images = post.content | split:"<img " %}
+              {% for image in images %}
+                {% if image contains 'src=' %}
+                  {% assign imageMarkup = image | split:">" | first %}
+                  <img {{ imageMarkup }}{:.post-thumbnail}>
+                  {% break %}
+                {% endif %}
+              {% endfor %}
+              <div blog-roll-text-cont>
+              <a class="post-widget-title" href="{{ post.url }}"><h3>{{ post.title }}</h3>
+              {{ post.description }}
+              {{ post.firstImg }}
+              </a>
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+        {% include fourWideCircleImages.html%}
+        </div><!-- /.container -->
+      {% include footer.html %}
   </body>
 </html>
