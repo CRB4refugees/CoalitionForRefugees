@@ -27,7 +27,7 @@ mobile-nav: <script type="text/javascript" src="/js/menu.js"></script>
 # bootstrapJS: <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></script>
 
 
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/CoalitionForRefugees" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
