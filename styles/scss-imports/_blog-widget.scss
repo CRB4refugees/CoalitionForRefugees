@@ -20,6 +20,19 @@
   margin-bottom: auto;
 }
 
+.post-blog-widget-cont {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  // margin: 0;
+  padding: 0;
+  overflow: scroll;
+  list-style-type: none;
+  margin: 10px auto;
+  order: -1;
+  margin-bottom: auto;
+}
+
 .twitter-timeline-cont {
   width: 100%;
 }
@@ -105,6 +118,22 @@
       flex-grow: 1;
       justify-content: center;
       height: 100%;
+    }
+
+
+    .post-blog-widget-cont {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      width: 50%;
+      // background: $redBrown;
+      // height: 80%;
+      list-style-type: none;
+      margin: 1%;
+      order: 2;
+      flex-grow: 1;
+      justify-content: flex-start;
+      align-items: center;
     }
 
     .post-widget-cont {
