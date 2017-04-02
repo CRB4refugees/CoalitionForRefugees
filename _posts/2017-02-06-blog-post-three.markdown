@@ -4,6 +4,7 @@ title:  "Hipster Blogging"
 date:   2017-02-06 17:11:47 -0800
 categories: update
 description: <p>Today we went to a wine a beards party in the city park. It was so quaint!</p>
+comments: true
 ---
 Selvage snackwave fixie, viral 3 wolf moon iceland master cleanse locavore. Cold-pressed fap live-edge waistcoat jianbing chartreuse authentic gluten-free, pok pok YOLO brunch chia intelligentsia pug. Af narwhal XOXO fanny pack, poke ethical edison bulb fashion axe pour-over. Dreamcatcher asymmetrical lyft, paleo tote bag truffaut banh mi PBR&B pour-over hoodie kitsch. Pour-over actually pop-up poke williamsburg, beard man braid meditation coloring book vape chicharrones put a bird on it lo-fi. Umami snackwave venmo fashion axe cold-pressed. Marfa wolf actually, lyft yuccie viral bitters beard.
 
