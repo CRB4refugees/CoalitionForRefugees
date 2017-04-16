@@ -30,7 +30,7 @@
       background-position: center;
       background-color: $greyBlue70;
       border-bottom: 1px solid $redBrown;
-
+      // blur
     }
 
     .focal-text-container {
@@ -41,6 +41,7 @@
       align-items: center;
       justify-content: center;
       text-rendering: optimizeLegibility;
+
     }
 
     .focalHeadline {
@@ -184,7 +185,7 @@
     }
 
     .focal-text-container {
-      width: 50%;
+      width: 60%;
   }
 
     .focal-overlay {
@@ -228,7 +229,7 @@
     .img-cont {
       order: 0;
       width: 48%;
-      margin: 1%;
+      margin:  1% 1% 0% 1%;
     }
 
     .reverse {
