@@ -1,30 +1,22 @@
-# CoalitionForRefugees
-A website for the Coalition for Refugees from Burma.
+# Coalition For Refugees from Burma
 
-##List of Includes:
+------
 
-1. {% include head.html %}
+A website for the Coalition for Refugees from Burma, a nonprofit devoted to helping refugees living in Seattle through a comprehensive set of educational programs. Find them online (and donate to a great cause) [on their live site](http://www.allburmarefugees.org/).
 
-2. {% include mobile_nav.html %}
+## Specs
+This site was built with Jekyll, Sass, jQuery, and some vanilla JavaScript. It was made as a pro bono project by [Will Bjorn](http://jackofalltrad.es).
 
-3. (optional) {% include social-media.html %}
-
-4.  {% include header.html%}
-
-5. (optional) {% for post in site.posts limit:3 %}
-
-6. (optional) {% include fourWideCircleImages.html%}
-
-7. {% include footer.html%}
-
-8. Image: consider in tandem with front matter:
-
----
+## Notes
+#### List of Includes:
++ {% include head.html %}
++ {% include mobile_nav.html %}
+(optional) {% include social-media.html %}
++ {% include header.html%}
++ (optional) {% for post in site.posts limit:3 %}
++ (optional) {% include fourWideCircleImages.html%}
++ {% include footer.html%}
++ Image: consider in tandem with front matter:
 image: path/to/post/image.jpg
----
-
-{% if page.image %}
-<meta property="og:image" content="path/to/post/image.jpg">
-{% else %}
-<meta property="og:image" content="path/to/page/image.jpg">
-{% endif %}
++ {% if page.image %}
++ {% else %} {% endif %}
