@@ -1,5 +1,6 @@
 ---
 title: Our Blog
+permalink: "/CRB_blog/"
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -10,19 +11,22 @@ title: Our Blog
       <div id="blog-content-container" class="content-container">
         <ul id="blog-roll" class="">
           {% for post in site.posts %}
+          <a class="post-widget-title" href="{{ post.url }}">
             <li class="blog-roll-cont">
               {% assign images = post.content | split:"<img " %}
               {% for image in images %}
                 {% if image contains 'src=' %}
                   {% assign imageMarkup = image | split:">" | first %}
-                  <img {{ imageMarkup }}{:.post-thumbnail}>
+                  <img {{ (/)imageMarkup }} {: .post-thumbnail } >
                   {% break %}
                 {% endif %}
               {% endfor %}
               <div blog-roll-text-cont>
-              <a class="post-widget-title" href="{{ post.url }}"><h3>{{ post.title }}</h3>
+              <!-- <a class="post-widget-title" href="{{ post.url }}"> -->
+              <h3>{{ post.title }}</h3>
               {{ post.description }}
               {{ post.firstImg }}
+              <p>{{ post.content | strip_html | truncatewords: 35 }}</p>
               </a>
               </div>
             </li>

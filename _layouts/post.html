@@ -48,6 +48,7 @@
   <h4>Recent posts</h4>
   <ul class="post-blog-widget-cont">
     {% for post in site.posts limit:3 %}
+    <a class="post-widget-title" href="{{ post.url }}">
       <li class="post-post-widget-cont">
         {% assign images = post.content | split:"<img " %}
         {% for image in images %}
@@ -58,7 +59,8 @@
           {% endif %}
         {% endfor %}
         <div blog-roll-text-cont>
-        <a class="post-widget-title" href="{{ post.url }}"><h3>{{ post.title }}</h3>
+        <!-- <a class="post-widget-title" href="{{ post.url }}"> -->
+          <h3>{{ post.title }}</h3>
         {{ post.description }}
         {{ post.firstImg }}
         </a>

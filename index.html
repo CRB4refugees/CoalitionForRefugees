@@ -1,0 +1,111 @@
+---
+title: The Coalition for Refugees from Burma - Home
+---
+{% include head.html %}
+  {% include mobile_nav.html %}
+  <div class="focalImg">
+    <div class="focal-overlay">
+      <div class="focal-text-container">
+        <h1 class="focalHeadline">We help refugees</h1>
+        <p class="focal-subheadline">We are the Coalition for Refugees from Burma, and we help refugees get on their feet and learn the skills they need to become successful in an ever-changing world.</p>
+        <div class="focal-btn-container">
+          <div class="button-container-home">
+            <a href="/OurMission" class="btn btn-sm animated-button thar-two">Learn More</a>
+            <a href="https://crburma.ejoinme.org/crbdonationpage" target="_blank" id="donate-btn-home" class="btn btn-sm animated-button thar-two secondary-btn">Donate</a>
+          </div>
+          {% include social-media.html %}
+        </div>
+      </div>
+    </div>
+  </div> <!-- end focal image div -->
+  {% include header.html%}
+  <div class="content-container">
+    <!-- BEGINNING OF SECTION ONE -->
+    <section class="flex-page-section">
+      <div class="text-cont">
+        <h2>Helping adjust, overcome and thrive</h2>
+        <p>Our primary mission is to aid refugees who have resettled to the Seattle area - and we are devoted to this mission!</p>
+        <div class="button-container-home-page">
+          <a href="/OurMission" class="btn btn-sm animated-button thar-two">Our Mission</a>
+        </div>
+      </div>
+      <div class="img-cont collage9">
+        <img class="solo-img" src="/assets/images/Enhanced/GroupShotSQ0.jpg" alt="">
+        <img class="solo-img" src="/assets/images/Enhanced/TeyAndAbdullahiSQ.jpg" alt="">
+        <img class="solo-img" src="/assets/images/Enhanced/ComputerLiteracyAdultSQ0.jpg" alt="">
+        <img class="solo-img" src="/assets/images/Enhanced/ComputerTrainingSQ0.jpg" alt="">
+        <img class="solo-img" src="/assets/images/Enhanced/OutsideStepLadderSQ.jpg" alt="">
+        <img class="solo-img" src="/assets/images/Enhanced/ClassroomSQ3.jpg" alt="">
+        <img class="solo-img" src="/assets/images/Enhanced/FieldTripSQ3.jpg" alt="">
+        <img class="solo-img" src="/assets/images/Enhanced/FieldTripGroupSQ0.jpg" alt="">
+        <img class="solo-img" src="/assets/images/Enhanced/ClassroomSQ2.jpg" alt="">
+      </div>
+    </section>
+    <!-- END OF SECTION ONE -->
+    <!--                    -->
+    <!-- BEGINNING OF SECTION TWO -->
+    <section class="flex-page-section alternative-page-section">
+      <div class="text-cont">
+        <h2>Programs for all ages</h2>
+        <p>The Coalition for Refugees from Burma has programs and classes for all ages - from technology programs for adults to after school programs for students. See our programs page for more information.</p>
+        <div class="button-container-home-page">
+          <a href="/Programs" class="btn btn-sm animated-button thar-ter">Programs</a>
+        </div>
+      </div>
+      <div class="img-cont reverse">
+        <img class="solo-img" src="/assets/images/Enhanced/FieldTripSQ0.jpg" alt="A group of members graduates from our summer STEP program.">
+      </div>
+    </section>
+    <!-- END OF SECTION TWO -->
+    <!--                    -->
+    <!-- BEGINNING OF SECTION THREE -->
+    <section class="flex-page-section">
+      <div class="text-cont">
+        <h2>Learn more about what we do</h2>
+        <p>Want to find out more about us? Read the CRB blog to get up to date information on everything CRB-related!</p>
+        <p>Interested in helping those in need? Our Get Involved page has info on how you can do just that.</p>
+        <div class="button-container-home-page">
+          <a href="/GetInvolved" class="btn btn-sm animated-button thar-two">Get Involved</a>
+          <a href="/CRB_blog" class="btn btn-sm animated-button thar-two">Our Blog</a>
+        </div>
+      </div>
+      <div class="img-cont">
+        <img class="solo-img" src="/assets/images/Enhanced/GOALSummerProgramGraduation.jpg" alt="">
+      </div>
+    </section>
+    <!-- END OF SECTION THREE -->
+    <h2 class="recent-posts-widget-title">Our Recent Posts and Tweets</h2>
+    <div class="twitter-and-blog-widget-cont">
+      <div class="twitter-timeline-cont">
+        <a class="twitter-timeline" data-height="500" data-link-color="#3a506b" data-tweet-limit="5" href="https://twitter.com/BurmaRefugees">Tweets by BurmaRefugees</a> <script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+        <ul class="blog-widget-cont">
+        {% for post in site.posts limit:4 %}
+          <a class="post-widget-title" href="{{ post.url }}">
+            <li class="post-widget-cont">
+              {% assign images = post.content | split:"<img " %}
+              {% for image in images %}
+                {% if image contains 'src=' %}
+                  {% assign imageMarkup = image | split:">" | first %}
+                  <img {{ imageMarkup }} {: .post-thumbnail} >
+                  {% break %}
+                {% endif %}
+              {% endfor %}
+              <div blog-roll-text-cont>
+              <a class="post-widget-title" href="{{ post.url }}">
+              <h3>{{ post.title }}</h3>
+              <!-- {{ post.description }} -->
+              {{ post.firstImg }}
+              <p>{{ post.content | strip_html | truncatewords: 20 }}</p>
+              </a>
+              </div>
+            </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% include fourWideCircleImages.html %}
+  </div><!-- /.container -->
+  {% include footer.html %}
+
+  </body>
+</html>

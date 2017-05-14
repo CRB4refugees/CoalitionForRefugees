@@ -3,7 +3,6 @@ layout: post
 title:  "Our First Blog!"
 date:   2017-04-24 12:11:47 -0800
 categories: jekyll update
-description: <p>"This is the description of the post"</p>
 comments: true
 ---
 
