@@ -17,7 +17,7 @@ permalink: "/CRB_blog/"
               {% for image in images %}
                 {% if image contains 'src=' %}
                   {% assign imageMarkup = image | split:">" | first %}
-                  <img {{ (/)imageMarkup }} {: .post-thumbnail } >
+                  <img {{ imageMarkup }} {: .post-thumbnail } >
                   {% break %}
                 {% endif %}
               {% endfor %}
@@ -32,7 +32,7 @@ permalink: "/CRB_blog/"
             </li>
           {% endfor %}
         </ul>
-        {% include fourWideCircleImages.html%}
+        {% include fourWideCircleImages.html %}
         </div><!-- /.container -->
       {% include footer.html %}
   </body>
