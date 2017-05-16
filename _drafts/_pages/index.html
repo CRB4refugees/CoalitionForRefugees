@@ -83,4 +83,29 @@ title: The Coalition for Refugees from Burma - Home
         {% for post in site.posts limit:4 %}
           <a class="post-widget-title" href="{{ post.url }}">
             <li class="post-widget-cont">
-              {% assign images = post.content | split:"</li></a></ul></div></div>
+              {% assign images = post.content | split:"<img " %}
+              {% for image in images %}
+                {% if image contains 'src=' %}
+                  {% assign imageMarkup = image | split:">" | first %}
+                  <img {{ imageMarkup }} {: .post-thumbnail} >
+                  {% break %}
+                {% endif %}
+              {% endfor %}
+              <div blog-roll-text-cont>
+              <a class="post-widget-title" href="{{ post.url }}">
+              <h3>{{ post.title }}</h3>
+              <!-- {{ post.description }} -->
+              {{ post.firstImg }}
+              <p>{{ post.content | strip_html | truncatewords: 20 }}</p>
+              </a>
+              </div>
+            </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% include fourWideCircleImages.html %}
+  </div><!-- /.container -->
+  {% include footer.html %}
+
+  </body>
+</html>
