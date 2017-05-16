@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Our First Blog!"
-date:   2017-04-24 12:11:47 -0800
+title: Our First Blog!
+date: '2017-04-24T20:11:47.000+00:00'
 categories: jekyll update
 comments: true
 ---
