@@ -1,8 +1,7 @@
 ---
-pages:
-- _posts/2018-newsletter.md
-- _posts/2017-04-24-Our-First-Blog-Post.markdown
+label: Posts
 hide_body: false
+is_partial: false
 fields:
 - name: layout
   label: Layout
@@ -29,3 +28,7 @@ fields:
   type: boolean
   hidden: false
   default: ''
+pages:
+- _pages/partnerships.md
+- _posts/2017-04-24-Our-First-Blog-Post.markdown
+- _posts/2018-newsletter.md
