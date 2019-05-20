@@ -28,7 +28,7 @@ fields:
   hidden: false
   default: ''
 pages:
-- _pages/test.md
 - _pages/partnerships.md
+- _pages/test.md
 - _posts/2017-04-24-Our-First-Blog-Post.markdown
 - _posts/2018-newsletter.md
