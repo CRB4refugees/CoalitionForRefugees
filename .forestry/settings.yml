@@ -8,7 +8,7 @@ sections:
   path: ''
   label: Pages
   create: documents
-  match: "**/*.html"
+  match: _pages/*.html
   new_doc_ext: html
 - type: jekyll-pages
   label: Pages
