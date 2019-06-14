@@ -8,7 +8,7 @@ sections:
   path: ''
   label: Components
   create: documents
-  match: "/_layouts/*.html"
+  match: "/_includes/*.html"
   new_doc_ext: html
 - type: document
   path: index.html
