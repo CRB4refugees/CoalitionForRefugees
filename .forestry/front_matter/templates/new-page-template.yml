@@ -1,4 +1,9 @@
 ---
 label: New-Page-Template
 hide_body: false
-fields: []
+fields:
+- name: heading
+  type: text
+  config:
+    required: false
+  label: Heading
