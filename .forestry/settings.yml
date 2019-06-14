@@ -13,12 +13,6 @@ sections:
   create: documents
   match: _pages/*.html
   new_doc_ext: html
-- type: directory
-  path: ''
-  label: Components
-  create: documents
-  match: "/_includes/*.html"
-  new_doc_ext: html
 - type: jekyll-posts
   label: Posts
   create: all
