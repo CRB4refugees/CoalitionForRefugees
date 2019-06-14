@@ -7,7 +7,7 @@ sections:
 - type: directory
   path: ''
   label: Components
-  create: all
+  create: documents
   match: "/_layouts/*.html"
   new_doc_ext: html
 - type: document
