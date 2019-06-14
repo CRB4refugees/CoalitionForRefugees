@@ -4,12 +4,6 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: directory
-  path: ''
-  label: Components
-  create: documents
-  match: "/_includes/*.html"
-  new_doc_ext: html
 - type: document
   path: index.html
   label: Home Page
@@ -19,9 +13,11 @@ sections:
   create: documents
   match: _pages/*.html
   new_doc_ext: html
-- type: jekyll-pages
-  label: Pages
-  create: all
+- type: directory
+  path: ''
+  label: Components
+  create: documents
+  match: "/_includes/*.html"
   new_doc_ext: html
 - type: jekyll-posts
   label: Posts
