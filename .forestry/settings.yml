@@ -4,10 +4,15 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: directory
+  path: ''
+  label: Components
+  create: all
+  match: _layouts/*.html
+  new_doc_ext: ".html"
 - type: document
   path: index.html
   label: Home Page
-  match: "**/*"
 - type: directory
   path: ''
   label: Pages
