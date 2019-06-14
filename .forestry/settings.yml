@@ -7,7 +7,7 @@ sections:
 - type: directory
   path: ''
   label: Pages
-  create: all
+  create: documents
   match: "**/*.html"
   new_doc_ext: html
 - type: jekyll-pages
