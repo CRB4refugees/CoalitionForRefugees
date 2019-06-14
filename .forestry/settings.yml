@@ -8,8 +8,8 @@ sections:
   path: ''
   label: Components
   create: all
-  match: _layouts/*.html
-  new_doc_ext: ".html"
+  match: "/_layouts/*.html"
+  new_doc_ext: html
 - type: document
   path: index.html
   label: Home Page
