@@ -4,12 +4,6 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: directory
-  path: ''
-  label: Includes
-  create: all
-  match: _includes/*
-  new_doc_ext: html
 - type: document
   path: index.html
   label: Home Page
@@ -28,6 +22,12 @@ sections:
 - type: jekyll-posts
   label: Posts
   create: all
+- type: directory
+  path: ''
+  label: Includes
+  create: all
+  match: _includes/*
+  new_doc_ext: html
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: "/uploads"
