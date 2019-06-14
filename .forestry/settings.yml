@@ -9,7 +9,7 @@ sections:
   label: Includes
   create: all
   match: _includes/*
-  new_doc_ext: ".html"
+  new_doc_ext: html
 - type: document
   path: index.html
   label: Home Page
