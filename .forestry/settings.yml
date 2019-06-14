@@ -8,7 +8,7 @@ sections:
   path: ''
   label: Includes
   create: all
-  match: "/_includes/*"
+  match: _includes/*
   new_doc_ext: ".html"
 - type: document
   path: index.html
