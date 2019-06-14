@@ -28,4 +28,5 @@ fields:
   hidden: false
   default: ''
 pages:
+- new-page.md
 - _posts/2017-04-24-Our-First-Blog-Post.markdown
