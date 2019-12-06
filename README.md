@@ -9,14 +9,3 @@ This site was built with Jekyll, Sass, jQuery, and some vanilla JavaScript. It w
 
 ## Notes
 #### List of Includes:
-+ {% include head.html %}
-+ {% include mobile_nav.html %}
-(optional) {% include social-media.html %}
-+ {% include header.html%}
-+ (optional) {% for post in site.posts limit:3 %}
-+ (optional) {% include fourWideCircleImages.html%}
-+ {% include footer.html%}
-+ Image: consider in tandem with front matter:
-image: path/to/post/image.jpg
-+ {% if page.image %}
-+ {% else %} {% endif %}
